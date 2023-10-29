@@ -8,3 +8,12 @@ head.innerHTML = `
                 <title>Call to Action</title>
                 <link rel="stylesheet" href="./css/style.css">
 `
+const body = document.querySelector('body');
+
+const site = document.createElement('div');
+site.classList.add('site');
+body.appendChild(site);
+
+const option = document.createElement('div')
+option.classList.add('option');
+site.appendChild(option);
