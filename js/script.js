@@ -14,6 +14,15 @@ const site = document.createElement('div');
 site.classList.add('site');
 body.appendChild(site);
 
-const option = document.createElement('div')
+const option = document.createElement('div');
 option.classList.add('option');
 site.appendChild(option);
+
+const optionHeader = document.createElement('div');
+optionHeader.classList.add('option__header');
+option.appendChild(optionHeader);
+
+const optionItems = document.createElement('div');
+optionItems.classList.add('option__items');
+option.appendChild(optionItems);
+
