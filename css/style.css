@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../fonts/Arvo.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.site {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option__header {
+    margin-top: 122px;
+    margin-bottom: 55px;
+}
+
+.option__header__title,
+.option__item__title {
+    font-family: 'Arvo', serif;
+    font-size: 36px;
+    text-align: center;
+    color: #212121;;
+}
+
+.option__header__title {
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+
+.option__header__sub__title,
+.option__item__info {
+    font-family: 'Open Sans';
+    text-align: center;
+    color: #9FA3A7;
+}
+
+.option__header__sub__title {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.option__items {
+    display: flex;
+    margin-bottom: 139px;
+}
+
+.option__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.option__item__sup__title {
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: #9FA3A7;
+}
+
+.option__item__title {
+    line-height: 46px;
+    width: 210px;
+    margin-bottom: 25px;
+}
+
+.option__item__info {
+    font-size: 12px;
+    line-height: 22px;
+    width: 210px;
+    margin-bottom: 65px;
+}
+
+.option__item_btn {
+    font-family: 'Montserrat';
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-transform: uppercase;
+    background: transparent;
+    outline: none;
+    color: #212121;
+    padding: 24px 38px;
+    border-radius: 35px;
+    border: 3px solid #FFC80A;
+    cursor: pointer;
+    margin-bottom: 92px;
+}
+
+.option__item.active {
+    background-color: #8F75BE;
+}
+
+.active .option__item__sup__title {
+    color: #FFC80A;
+}
+
+.active .option__item__title,
+.active .option__item__info,
+.active .option__item_btn {
+    color: #fff;
+}
+
+.option__item:first-child {
+    border-left: 1px solid #E8e9ed;
+    border-top: 1px solid #E8e9ed;
+    border-bottom: 1px solid #E8e9ed;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
